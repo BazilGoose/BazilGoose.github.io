@@ -58,6 +58,7 @@ header {
 
 body > * {
   background-color: red;
+  padding: 0%;
 }
 
 main, header, nav, article, aside, footer, section {
