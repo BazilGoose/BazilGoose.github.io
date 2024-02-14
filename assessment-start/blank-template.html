@@ -14,27 +14,26 @@
       <colgroup>
         <col span="2"/>
         <col span="1",
-        border: 4px solid black,
-        headers="name"/>
+        border: 4px solid black/>
       </colgroup>
       <thead>
         <tr>
-          <th scope="col" id="types" colspan="2" style="background-color: rgb(250,250,250)"></th>
-          <th scope="col" id="name">Name</th>
-          <th scope="col" id="mass">Mass (10<sup>24</sup>kg)</th>
-          <th scope="col" id="diameter">Diameter (km)</th>
-          <th scope="col" id="density">Density (kg/m<sup>2</sup>)</th>
-          <th scope="col" id="gravity">Gravity (m/s<sup>2</sup>)</th>
-          <th scope="col" id="day">Length of day (hours)</th>
-          <th scope="col" id="sun">Distance from Sun (10<sup>6</sup>)</th>
-          <th scope="col" id="temperature">Mean temperature (<sup>o</sup>C)</th>
-          <th scope="col" id="moons">Number of moons</th>
-          <th scope="col" id="notes" colspan="2">Notes</th>
+          <th id="types" colspan="2" style="background-color: rgb(250,250,250)"></th>
+          <th id="name">Name</th>
+          <th id="mass">Mass (10<sup>24</sup>kg)</th>
+          <th id="diameter">Diameter (km)</th>
+          <th id="density">Density (kg/m<sup>2</sup>)</th>
+          <th id="gravity">Gravity (m/s<sup>2</sup>)</th>
+          <th id="day">Length of day (hours)</th>
+          <th id="sun">Distance from Sun (10<sup>6</sup>)</th>
+          <th id="temperature">Mean temperature (<sup>o</sup>C)</th>
+          <th id="moons">Number of moons</th>
+          <th id="notes" colspan="2">Notes</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row" id="terrestial" rowspan="4" colspan="2" headers="types">Terrestial planets</th>
+          <th id="terrestial" rowspan="4" colspan="2" headers="types">Terrestial planets</th>
           <th id="mercury" headers="name terrestial">Mercury</th>
           <td headers="mass terrestial mercury">0.330</td>
           <td headers="diameter terrestial mercury">4,879</td>
@@ -83,8 +82,8 @@
           <td colspan="2" headers="notes terrestial mars">The red planet</td>
         </tr>
         <tr>
-          <th id="jovian" scope="row" rowspan="4" headers="types">Jovian planets</th>
-          <th id="gas" scope="row" rowspan="2" headers="types jovian">Gas giants</th>
+          <th id="jovian" rowspan="4" headers="types">Jovian planets</th>
+          <th id="gas" rowspan="2" headers="types jovian">Gas giants</th>
           <th id="jupiter" headers="name jovian gas">Jupiter</th>
           <td headers="mass jovian gas jupiter">1898</td>
           <td headers="diameter jovian gas jupiter">142,984</td>
@@ -109,7 +108,7 @@
           <td colspan="2" headers="notes jovian gas saturn"></td>
         </tr>
         <tr>
-          <th id="ice" scope="row" rowspan="2" headers="types jovian">Ice giants</th>
+          <th id="ice" rowspan="2" headers="types jovian">Ice giants</th>
           <th id="uranus" headers="name jovian ice">Uranus</th>
           <td headers="mass jovian ice uranus">86.8</td>
           <td headers="diameter jovian ice uranus">51,118</td>
@@ -134,7 +133,7 @@
           <td colspan="2" headers="notes jovian ice neptune"></td>
         </tr>
         <tr>
-          <th id="dwarf" scope="row" colspan="2" headers="types">Dwarf planets</th>
+          <th id="dwarf" colspan="2" headers="types">Dwarf planets</th>
           <th id="pluto" headers="name dwarf">Pluto</th>
           <td headers="mass dwarf pluto">0.0146</td>
           <td headers="diameter dwarf pluto">2,370</td>
