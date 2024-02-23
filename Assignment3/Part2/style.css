@@ -1,0 +1,21 @@
+/*
+Name: Noah Barraclough
+File: style.css
+Date: February 23, 2024
+A file in which I have the css stylings for the cool-looking box
+*/
+
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+
+div {
+  margin: auto;
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  vertical-align:middle;
+  text-align:center;
+}

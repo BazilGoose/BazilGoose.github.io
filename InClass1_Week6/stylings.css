@@ -1,0 +1,85 @@
+body {
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* div {
+    height: 80px;
+    border: 2px solid red;
+} */
+
+.navigation-bar {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav li:hover, .right-nav li:hover {
+    font-weight: bold;
+}
+
+.left-nav li, .right-nav li {
+    /* border: 2px solid green; */
+    list-style-type: none;
+    /* Top, Right, Bottom, Left*/
+    margin: 0px 5px 0px 5px;
+}
+
+.left-nav {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.right-nav {
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-content {
+    /* border: 2px solid aqua; */
+    background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-Copilot-001:VP4-1399x600");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.info-box {
+    /* border: 2px solid purple; */
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 0;
+}
+
+.info-box * {
+    margin: 5px 0 5px 0;
+}
+
+.new-btn {
+    background-color: #ffb900;
+}
+
+.individual-btn {
+    background-color: #0067b8;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.option-links {
+    display: flex;
+    padding: 5px;
+}
+
+img {
+    position: absolute;
+    width: 120px;
+    height: 15px;
+}

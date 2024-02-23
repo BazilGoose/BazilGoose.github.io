@@ -1,0 +1,95 @@
+body {
+    /* background-color: red; */
+}
+
+div {
+    /* border: 2px solid red; */
+}
+
+/* ID's are the (2nd) most important... */
+/* #header {
+    background-color: blue;
+} */
+
+/* ...followed by class... */
+.header {
+    background-color: rgb(208,208,208);
+    text-align: center;
+    padding: 15px;
+}
+
+/* ...then the tagname... */
+/* header {
+    background-color: red;
+} */
+
+/* ...!important outclasses everything else for importance */
+/* header {
+    background-color: red !important;
+}
+
+header {
+    background-color: blue;
+} */
+
+.main-container {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+
+.main-container div {
+    padding: 15px;
+}
+
+.left-content {
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left-content a {
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(208,208,208);
+    text-decoration: none;
+    color: black;
+}
+
+.left-content a:hover {
+    transition: ease 1.5s;
+    transform: scale(1.06);
+}
+
+.center-content {
+    flex: 60%;
+    color: rgb(208,208,208);
+    font-weight: bold;
+}
+
+.right-content {
+    flex: 20%;
+    color: rgb(208,208,208);
+    font-weight: bold;
+}
+
+.footer {
+    background-color: rgb(208,208,208);
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 620px) {
+    body {
+        /* background-color: blue; */
+    }
+
+    .main-container {
+        flex-direction: column;
+        height: fit-content;
+    }
+}
