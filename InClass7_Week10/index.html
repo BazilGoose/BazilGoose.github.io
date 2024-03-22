@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>Blog</title>
+    <style>
+        .blog-container {
+            margin: 0 auto;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog</h1>
+    <!-- We want to create a mini blog. The user should be able to type in a title, and
+    some content, and click on a button to dynamically create a  new blogpost in their blog. -->
+
+    <!-- We are going to create two text input fields.
+    One will be out blog post title, and the other will be the content of the blog post.
+    We will use javascript to get the user text from the input and we will use it to create a new HTML element. -->
+    <div class="blog-container">
+        <input
+            type="text"
+            id="title-input"
+            placeholder="Title"
+            autocomplete="off"
+        />
+        <textarea
+            id="content-input"
+            placeholder="Content"
+            autocomplete="off"
+        >
+        </textarea>
+        <button id="add-post-btn">Add New Post</button>
+        <!-- We will create another div at the bottom where we will dynamically append new blog posts -->
+        <div id="blog-posts"></div>
+    </div>
+</body>
+</html>
