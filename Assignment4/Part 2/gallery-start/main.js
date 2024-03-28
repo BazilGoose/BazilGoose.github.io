@@ -17,4 +17,6 @@ for (let i = 0; i < fileNames.length; i++){
     newImage.setAttribute('alt', `${altNames[i]}`);
     thumbBar.appendChild(newImage);
 };
+
 /* Wiring up the Darken/Lighten button */
+//
