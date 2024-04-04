@@ -1,3 +1,9 @@
+/* 
+Name: Noah Barraclough
+File: script.js
+Date: April 4, 2024
+*/
+
 // 1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');
@@ -20,7 +26,7 @@ let insertz = ["spontaneously combusted", "melted into a puddle on the sidewalk"
 
 // 3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
-randomize.addEventListener('click', result);
+randomize.addEventListener("click", result);
 
 function result() {
 
@@ -28,18 +34,16 @@ function result() {
   let xItem = randomValueFromArray(insertx);
   let yItem = randomValueFromArray(inserty);
   let zItem = randomValueFromArray(insertz);
+  
+  if(customName.value !== '') {
+    const name = customName.value;
+    xItem = name
+
+  }
 
   newStory = newStory.replaceAll(":insertx:", xItem);
   newStory = newStory.replaceAll(":inserty:", yItem);
   newStory = newStory.replaceAll(":insertz:", zItem);
-  
-  if(customName.value !== '') {
-    const name = customName.value;
-    newStory = newStory.replaceAll(":insertx:", name);
-    newStory = newStory.replaceAll(":inserty:", yItem);
-    newStory = newStory.replaceAll(":insertz:", zItem);
-
-  }
 
   if(document.getElementById("uk").checked) {
     const weight = Math.round((300/14)) + " stone";
@@ -49,7 +53,7 @@ function result() {
 
   }
 
-  console.log(this.newStory);
+  console.log(newStory);
 
   story.textContent = newStory;
   story.style.visibility = 'visible';
