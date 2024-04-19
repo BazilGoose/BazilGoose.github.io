@@ -1,0 +1,46 @@
+<!--
+Author:         Noah Barraclough
+File Name:      index.html
+Date:           January 26, 2024
+Description:    The main menu to move between each of the assignments
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <style>
+        .eventForm {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: 0 auto;
+        }
+    </style>
+    <title>Handling Forms</title>
+</head>
+<body>
+    <h1>Handling Forms</h1>
+    <h2>Summer Events</h2>
+    <form id="eventForm" class="eventForm" action="" method="" onsubmit="handleFormSubmit(); return false;">
+
+        <label for="eventName">Event Name:</label>
+        <input type="text" name="eventName" autocomplete="off"/>
+
+        <label for="eventDetails">Event Details:</label>
+        <textarea type="text" name="eventDetails" autocomplete="off"></textarea>
+
+        <label for="eventEmail">Event Organizer Email:</label>
+        <input type="text" name="eventEmail" autocomplete="off"/>
+
+        <label for="eventDate">Event Date:</label>
+        <input type="date" name="eventDate" autocomplete="off"/>
+
+        <!-- Submit Button-->
+        <input type="submit" value="Add New Summer Event" />
+
+    </form>
+</body>
+</html>
